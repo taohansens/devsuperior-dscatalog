@@ -1,2 +1,9 @@
-package com.taohansen.dscatalog.repositories;public class CategoryRepository {
+package com.taohansen.dscatalog.repositories;
+
+import com.taohansen.dscatalog.entities.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CategoryRepository extends JpaRepository<Category, Long> {
 }
